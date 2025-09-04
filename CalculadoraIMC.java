@@ -32,15 +32,15 @@ public class CalculadoraIMC {
                 if (media>=40){
                     classificacao ="Obesidade mórbida.";
                     break;
-                } if(media<39.9&&media>30){
+                } if(media<=39.9&&media>=30){
                     classificacao="Obesidade moderada.";
                     break;
                 }
-                if(media<29.9&&media>25){
+                if(media<=29.9&&media>=25){
                     classificacao="Obesidade leve.";
                     break;
                 }
-                if(media<24.9&&media>20){
+                if(media<=24.9&&media>=20){
                     classificacao="Normal.";
                     break;
                 }
@@ -52,15 +52,15 @@ public class CalculadoraIMC {
                 if (media>=39){
                     classificacao ="Obesidade mórbida.";
                     break;
-                } if(media<38.9&&media>29){
+                } if(media<=38.9&&media>=29){
                     classificacao="Obesidade moderada.";
                     break;
                 }
-                if(media<28.9&&media>24){
+                if(media<=28.9&&media>=24){
                     classificacao="Obesidade leve.";
                     break;
                 }
-                if(media<23.9&&media>19){
+                if(media<=23.9&&media>=19){
                     classificacao="Normal.";
                     break;
                 }
