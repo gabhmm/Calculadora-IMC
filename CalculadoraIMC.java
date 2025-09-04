@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class CalculadoraIMC {
     public static void main(String[] args) {
         Scanner sn = new Scanner(System.in);
-        while(true){
         String classificacao = "" ;
         String nome;
         char genero;
@@ -19,12 +18,12 @@ public class CalculadoraIMC {
         System.out.print("Digite a sua altura: ");
         altura = Math.round(sn.nextDouble());
         if (peso==0||altura==0){
-            System.out.println("Por favor, digite valores válidos!");
+            System.out.println("Valores inválidos!");
             return;
         }
     }
         catch(Exception e){
-            System.out.println("Por favor, digite valores válidos!");
+            System.out.println("Valores inválidos!");
             return;
         }
         double media = peso/(altura*altura);
@@ -72,5 +71,5 @@ public class CalculadoraIMC {
            System.out.printf("Nome:%s\nGenero:%c\nIMC:%.2f\nClassificação:%s",nome,genero,media,classificacao);
         }
     }
-}
+
 
