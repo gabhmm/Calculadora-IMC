@@ -36,7 +36,7 @@ public class CalculadoraIMC {
         double media = (peso / (altura * altura));
         System.out.print("\033[H\033[2J");
         switch (genero) {
-            case 'M':
+            case 'M','m':
                 if (media >= 40) {
                     classificacao = "Obesidade mórbida.";
                     break;
@@ -56,7 +56,7 @@ public class CalculadoraIMC {
                 classificacao = "Abaixo do normal";
                 break;
 
-            case 'F', 'N':
+            case 'F', 'N','f','n':
                 if (media >= 39) {
                     classificacao = "Obesidade mórbida.";
                     break;
