@@ -34,7 +34,7 @@ public class CalculadoraIMC {
         }
 
         double media = (peso / (altura * altura));
-        
+        System.out.print("\033[H\033[2J");
         switch (genero) {
             case 'M':
                 if (media >= 40) {
