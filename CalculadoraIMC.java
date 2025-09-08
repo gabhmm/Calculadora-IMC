@@ -22,6 +22,7 @@ public class CalculadoraIMC {
 
             System.out.print("Digite a sua altura: ");
             altura = sn.nextDouble();
+            sn.nextLine();
             sn.close();
 
             if (peso == 0 || altura == 0) {
@@ -41,15 +42,15 @@ public class CalculadoraIMC {
                     classificacao = "Obesidade mórbida.";
                     break;
                 }
-                if (media >= 30 && media <= 39.9) {
+                if (media >= 30 && media < 39.9) {
                     classificacao = "Obesidade moderada.";
                     break;
                 }
-                if (media >= 25 && media <= 29.9) {
+                if (media >= 25 && media < 29.9) {
                     classificacao = "Obesidade leve.";
                     break;
                 }
-                if (media >= 20 && media <= 24.9) {
+                if (media >= 20 && media < 24.9) {
                     classificacao = "Normal.";
                     break;
                 }
@@ -61,15 +62,15 @@ public class CalculadoraIMC {
                     classificacao = "Obesidade mórbida.";
                     break;
                 }
-                if (media >= 29 && media <= 38.9) {
+                if (media >= 29 && media < 38.9) {
                     classificacao = "Obesidade moderada.";
                     break;
                 }
-                if (media >= 24 && media <= 28.9) {
+                if (media >= 24 && media < 28.9) {
                     classificacao = "Obesidade leve.";
                     break;
                 }
-                if (media >= 19 && media <= 23.9) {
+                if (media >= 19 && media < 23.9) {
                     classificacao = "Normal.";
                     break;
                 }
