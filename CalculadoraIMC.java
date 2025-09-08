@@ -36,47 +36,44 @@ public class CalculadoraIMC {
 
         double media = (peso / (altura * altura));
         System.out.print("\033[H\033[2J");
-        switch (genero) {
-            case 'M','m':
-                if (media >= 40) {
-                    classificacao = "Obesidade mórbida.";
+        switch(genero){
+            case 'M':
+                if (media>=40){
+                    classificacao ="Obesidade mórbida.";
+                    break;
+                } else if(media>=30){
+                    classificacao="Obesidade moderada.";
+                    break;
+                } else if(media>=25){
+                    classificacao="Obesidade leve.";
+                    break;
+                }else if(media>=20){
+                    classificacao="Normal.";
                     break;
                 }
-                if (media >= 30 && media < 39.9) {
-                    classificacao = "Obesidade moderada.";
-                    break;
-                }
-                if (media >= 25 && media < 29.9) {
-                    classificacao = "Obesidade leve.";
-                    break;
-                }
-                if (media >= 20 && media < 24.9) {
-                    classificacao = "Normal.";
-                    break;
-                }
-                classificacao = "Abaixo do normal";
+                else{classificacao="Abaixo do normal";
                 break;
-
-            case 'F', 'N','f','n':
-                if (media >= 39) {
-                    classificacao = "Obesidade mórbida.";
+                }
+                
+        
+            case 'F', 'N':
+                if (media>=39){
+                    classificacao ="Obesidade mórbida.";
+                    break;
+                } else if(media>=29){
+                    classificacao="Obesidade moderada.";
+                    break;
+                }else if(media>=24){
+                    classificacao="Obesidade leve.";
+                    break;
+                }else if(media>=19){
+                    classificacao="Normal.";
                     break;
                 }
-                if (media >= 29 && media < 38.9) {
-                    classificacao = "Obesidade moderada.";
-                    break;
-                }
-                if (media >= 24 && media < 28.9) {
-                    classificacao = "Obesidade leve.";
-                    break;
-                }
-                if (media >= 19 && media < 23.9) {
-                    classificacao = "Normal.";
-                    break;
-                }
-                classificacao = "Abaixo do normal";
+                else{classificacao="Abaixo do normal";
                 break;
-        }
+            }
+           }
 
         System.out.printf("Nome:%s\nGenero:%c\nIMC:%.2f\nClassificação:%s", nome, genero, media, classificacao);
     }
