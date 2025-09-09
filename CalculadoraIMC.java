@@ -18,14 +18,14 @@ public class CalculadoraIMC {
             genero = sn.nextLine().charAt(0);
 
             System.out.print("Digite o seu peso: ");
-            peso = Math.round(sn.nextDouble());
+            peso = sn.nextDouble();
 
             System.out.print("Digite a sua altura: ");
             altura = sn.nextDouble();
             sn.nextLine();
             sn.close();
 
-            if (peso == 0 || altura == 0) {
+            if (peso <= 0 || altura <= 0) {
                 System.out.println("Valores inválidos!");
                 return;
             }
